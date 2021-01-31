@@ -3,3 +3,8 @@ Jquery - Javascript ve bir takım HTML içerikleri kullanarak basit bir kamera /
 
 
 https://www.youtube.com/watch?v=TjZFcbfehn4 --> Daha detaylı bir şekilde çözüm üretmek ve öğrenmek isterseniz ''Soner Çelik'' hocamızın anlatıma da göz atabilirsiniz.
+
+Daha Gelişmiş Hali Olarak Bunlar Yapıldı: 
+  -Share Screen
+  -SnapShot
+  -Başlat / Durdur (Ekran Paylaşımı - SnapShot destekli)
