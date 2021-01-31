@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <title>WebRTC ile Deneme Olayı</title>
+</head>
+<style>
+    .video__style {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        border: 5px solid red;
+    }
+
+    .video__style--size {
+        width: 100%;
+        height: auto;
+    }
+
+    .button--center {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    button {
+        display: flex;
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: gray;
+    }
+</style>
+
+<body>
+    <form id="form1" runat="server">
+        <div class="button--center">
+            <button type="button" onclick="playVideo()">Başlat</button>
+            <button type="button" onclick="pauseVideo()">Durdur</button>
+        </div>
+        <button type="button" id="snapshot" style="margin:auto; margin-bottom: 1.5rem;">Take snapshot</button>
+        <button type="button" id="startButton" disabled style="margin:auto; margin-bottom: 1.5rem;">Ekranını Paylaş</button>
+        <div class="video__style">
+            <video class="video__style--size" playsinline id="myVideo" autoplay="autoplay"></video>
+        </div>
+        <canvas></canvas>
+    </form>
+</body>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</html>
