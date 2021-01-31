@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia || navigator
-        .webkitGetUserMedia;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.mozGetUserMedia || navigator.webkitGetUserMedia;
 })
 var myVideo = document.getElementById("myVideo");
 const video = document.querySelector('video');
